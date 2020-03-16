@@ -1,7 +1,7 @@
 import visidia.simulation.process.algorithm.LC0_Algorithm;
 import visidia.simulation.process.edgestate.MarkedState;
 
-public class ARPP extends LC0_Algorithm {
+public class TP2_HandShake_SpanningTree extends LC0_Algorithm {
     @Override
     public String getDescription(){
         return "Spanning tree algorithm using LC0.\n"
@@ -12,7 +12,7 @@ public class ARPP extends LC0_Algorithm {
     @Override
     protected void beforeStart(){
         setLocalProperty("label", vertex.getLabel());
-        setLocalProperty("Arty", );
+//        setLocalProperty("Arty", );
     }
 
     @Override
@@ -24,9 +24,7 @@ public class ARPP extends LC0_Algorithm {
         }
 
         if (getLocalProperty("label").equals("A") && getNeighborProperty("label").equals("I")){
-            for (int i = 0; i < getActiveDoor().size(); i++) {
 
-            }
             if(!( getLocalProperty("label").equals("A") && getNeighborProperty("label").equals("N"))){
                 setNeighborProperty("label", "A");
                 setLocalProperty("label","F");
@@ -36,6 +34,6 @@ public class ARPP extends LC0_Algorithm {
 
     @Override
     public Object clone(){
-        return new ARPP();
+        return new TP2_HandShake_SpanningTree();
     }
 }

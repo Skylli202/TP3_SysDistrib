@@ -4,11 +4,11 @@ import visidia.simulation.SimulationConstants;
 import visidia.simulation.process.algorithm.LC2_Algorithm;
 import visidia.simulation.process.edgestate.MarkedState;
 
-public class arbreRecouvrant extends LC2_Algorithm {
+public class TD1_ClosedStar_SpanningTree_SSP extends LC2_Algorithm {
 
     @Override
     public Object clone() {
-        return new arbreRecouvrant();
+        return new TD1_ClosedStar_SpanningTree_SSP();
     }
 
     @Override

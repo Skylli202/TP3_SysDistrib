@@ -11,9 +11,8 @@
 
 import visidia.simulation.SimulationConstants;
 import visidia.simulation.process.algorithm.LC0_Algorithm;
-import visidia.simulation.process.edgestate.MarkedState;
 
-public class Election extends LC0_Algorithm {
+public class TP3_HandShake_Election extends LC0_Algorithm {
     
     //private int neighboorsActiveCpt = 1;
 
@@ -62,7 +61,7 @@ public class Election extends LC0_Algorithm {
     
     @Override
     public Object clone(){
-        return new Election();
+        return new TP3_HandShake_Election();
     }
     
 }

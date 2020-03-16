@@ -12,13 +12,13 @@
 import visidia.simulation.SimulationConstants;
 import visidia.simulation.process.algorithm.LC1_Algorithm;
 
-public class ElectionOuverte extends LC1_Algorithm {
+public class TP4_OpenStar_Election extends LC1_Algorithm {
 
     //private int neighboorsActiveCpt = 1;
 
     @Override
     public String getDescription(){
-        return "Spanning tree algorithm using LCO.\n" +
+        return "Election ouverte LC1.\n" +
                 "Rule 1 : N(1) --- N(x) ---> F(0) --- N(x-1) \n" +
                 "Rule 2 : N(1) --- N(1) ---> E(0) --- F(0) \n";
     }
@@ -59,7 +59,7 @@ public class ElectionOuverte extends LC1_Algorithm {
 
     @Override
     public Object clone(){
-        return new Election();
+        return new TP3_HandShake_Election();
     }
 
 }

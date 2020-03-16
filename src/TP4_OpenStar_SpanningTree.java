@@ -1,11 +1,11 @@
 import visidia.simulation.process.algorithm.LC1_Algorithm;
 import visidia.simulation.process.edgestate.MarkedState;
 
-public class ArbreRecouvrant extends LC1_Algorithm {
+public class TP4_OpenStar_SpanningTree extends LC1_Algorithm {
 
     @Override
     public Object clone() {
-        return new ArbreRecouvrant();
+        return new TP4_OpenStar_SpanningTree();
     }
 
     @Override
