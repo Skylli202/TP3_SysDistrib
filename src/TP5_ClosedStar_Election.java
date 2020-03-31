@@ -1,7 +1,7 @@
 import visidia.rule.Neighbor;
-import visidia.simulation.SimulationConstants;
-import visidia.simulation.process.algorithm.LC2_Algorithm;
-import visidia.simulation.process.edgestate.MarkedState;
+        import visidia.simulation.SimulationConstants;
+        import visidia.simulation.process.algorithm.LC2_Algorithm;
+        import visidia.simulation.process.edgestate.MarkedState;
 
 public class TP5_ClosedStar_Election extends LC2_Algorithm {
     @Override
