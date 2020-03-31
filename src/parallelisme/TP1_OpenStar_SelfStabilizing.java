@@ -47,21 +47,7 @@ public class TP1_OpenStar_SelfStabilizing extends LC1_Algorithm {
          * LC1 == Je ne peux modifier que MON état et ne peux que lire l'état de mes voisins.
          */
 
-        /* WIP - Terminaison
-        boolean shouldStop = true;
-        for (int i = 0; i < getActiveDoors().size(); i++) {
-            int numPort = getActiveDoors().get(i);
-            if(getNeighborProperty(numPort, "label").equals("N")){
-                shouldStop = false;
-            }
-        }
-        if (shouldStop) {
-            this.localTermination();
-        }*/
-
-        //String possible de
-
-        //String neightboorsState[] = new String[getArity()];
+        String statePossibility[] = {"N","Y","Z"};
         ArrayList<String> neightboorsState = new ArrayList<>();
 
         for (int i = 0; i < getActiveDoors().size(); i++) {
@@ -69,26 +55,11 @@ public class TP1_OpenStar_SelfStabilizing extends LC1_Algorithm {
             neightboorsState.add((String) getNeighborProperty(numPort, "label"));
         }
 
-        // Rule 1
+        // Rule 1 & 2
         if(neightboorsState.contains(getLocalProperty("label"))) {
-
-        }
-
-
-
-        for (int i = 0; i < getActiveDoors().size(); i++) {
-            int numPort = getActiveDoors().get(i);
-
-            //System.out.println("L'état du voisoin connecté sur le port " + numPort + "est : " + getNeighborProperty(numPort, "label"));
-            if( getLocalProperty("label").equals("X") && getNeighborProperty( i,"label").equals("X")) {
-                setLocalProperty("label", "A");
-                setDoorState(new MarkedState(true),i);
-                break;
-            }
+            for (String state : statePossibility)
+                if(!neightboorsState.contains(state))
+                    setLocalProperty("label",state);
         }
     }
-}
-
-
-
 }
