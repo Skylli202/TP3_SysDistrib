@@ -47,6 +47,7 @@ public class TP1_OpenStar_SelfStabilizing extends LC1_Algorithm {
          * LC1 == Je ne peux modifier que MON état et ne peux que lire l'état de mes voisins.
          */
 
+        // On utilise N à la place de X pour ne pas a avoir à changer toutes les états des noeud dans ViSiDiA
         String statePossibility[] = {"N","Y","Z"};
         ArrayList<String> neightboorsState = new ArrayList<>();
 
