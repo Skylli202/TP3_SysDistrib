@@ -29,6 +29,16 @@ public class TD1_ClosedStar_SpanningTree_SSP extends LC2_Algorithm {
 
     @Override
     protected void onStarCenter() {
+/*
+        // Local terminaison exeample
+        if(((int) getLocalProperty("a")) >= 5)
+            localTermination();
+*/
+
+        // Local terminaison exeample
+        if(((int) getLocalProperty("a")) >= 5)
+            globalTermination();
+
 
         // Arbre Recouvrant
         if(getLocalProperty("label").equals("A")){
