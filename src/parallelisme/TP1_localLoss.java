@@ -101,7 +101,7 @@ public class TP1_localLoss extends LC2_Algorithm {
         /**
          * Question 3 :
          *      a) La récupération de l’information à la question 2 est-elle garantie ?
-         *              La récupration de l'information n'est pas garantie.
+         *              La récupération de l'information n'est pas garantie.
          *
          *      b) Si oui, pourquoi ?
          *         Sinon expliquez les raisons qui pourraient empêcher cette récupération (ou décrivez un scénario rendant cette récupération impossible).
